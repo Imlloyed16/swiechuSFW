@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świechu NSFW</title>
+    <link rel="stylesheet" href="csssigma.css">
+    <link rel="icon" href="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\sadamkosmit.png">
+</head>
+<body>
+    <header>
+        <a href="sigma.html"><p>Main Page</p></a>
+        <a href="gallery.html"><p>Gallery (NSFW)</p></a>
+        <a href="kontakt.html"><p>Personal, Physical Contact (With Świechu)</p></a>
+        <a href="aboutus.html"><p>About Us</p></a>
+    </header>
+
+    <main class="sigmamain square-wrapper">
+
+        <label for="SOTDsec">   Photos of the day</label>
+        <section class="SOTDsec">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\swiechulight.jpg" class="SOTD">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\pregnant.jpg" class="SOTD">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\kawaii.jpg" class="SOTD">
+        </section>
+        <p class="right bold circle">Patryk Świechowski – Człowiek, Legenda, Ikona Selfie</p>
+        <p class="right circle">Patryk Świechowski to postać, której nie da się zapomnieć – i to nie tylko ze względu na jego wyjątkowe selfie, ale także przez jego unikalne podejście do życia, higieny oraz intensywnego zaangażowania w wirtualny świat FIFA. Jego włosy, choć rzadko myte, mają swój niepowtarzalny zapach – mieszankę emocji, pasji oraz tygodniowej dawki potu i kurzu. A jeśli mówimy o dotyku... cóż, Patryk jest osobą, która doświadcza go w stopniu, którego większość z nas nigdy by sobie nie wyobraziła.</p>
+        <p class="right boldsmaller circle">Strona Selfie – Hołd dla Świechowskiej Sztuki Autoportretu</p>
+        <p class="right circle">Strona, którą właśnie przeglądasz, powstała w niezwykle historycznym momencie. Było to w czasie, gdy Patryk spędzał niezapomniane chwile u swojego wujka. Wujek, jak na prawdziwego miłośnika rodzinnych więzi przystało, postanowił zadbać o komfort swojego siostrzeńca w sposób dość… nietypowy. Lizanie uszu Patryka stało się symbolem tej epoki – epoki narodzin tej niezwykłej strony.
+
+            Właśnie wtedy, gdy Świechu przeżywał te emocjonalne (i sensoryczne) uniesienia, my postanowiliśmy uczcić jego wkład w świat selfie i stworzyć stronę, która stanie się cyfrowym pomnikiem jego twarzy. W końcu to nie jest zwykły człowiek – to ikona, której wyraz twarzy mówi więcej niż tysiąc słów.</p>
+            <p class="right boldsmaller circle">Podsumowanie</p>
+            <p class="right circle">Ta strona to nie tylko galeria selfie. To hołd dla człowieka, który łączy w sobie pasję do FIFA, unikalny zapach oraz niezachwianą odporność na higieniczne normy XXI wieku. Niech każdy odwiedzający pamięta, że choć Patryk może być dotykany, choć jego włosy mogą posiadać własną ekosferę, to jego selfie są czymś, co zapisze się w historii Internetu na zawsze.
+
+                <br>Z poważaniem,
+                <br><b>Aleksandra Modlińska</b></p>
+    </main>
+
+    <script>
+        // Create the observer like the examples above
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('circle-animation');
+                return;
+              }
+          
+              entry.target.classList.remove('circle-animation');
+            });
+          });
+          
+          // Get multiple elements instead of a single one using "querySelectorAll"
+          const squares = document.querySelectorAll('.circle');
+          
+          // Loop over the elements and add each one to the observer
+          squares.forEach((element) => observer.observe(element));
+            </script>
+</body>
+</html>

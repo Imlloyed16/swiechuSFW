@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świechu NSFW</title>
+    <link rel="stylesheet" href="csssigma.css">
+    <link rel="icon" href="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\sadamkosmit.png">
+</head>
+<body>
+    <header>
+        <a href="sigma.html"><p>Main Page</p></a>
+        <a href="gallery.html"><p>Gallery (NSFW)</p></a>
+        <a href="kontakt.html"><p>Personal, Physical Contact (With Świechu)</p></a>
+        <a href="aboutus.html"><p>About Us</p></a>
+    </header>
+
+    <main class="gallery">
+        <div class="images square">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\Dowody.jpg">
+            <p class="podpis">Karta stałego konfidenta</p>
+        </div>
+
+        <div class="images square">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\sadamkosmit.png">
+            <p class="podpis">Sadam i kosmit</p>
+        </div>
+
+        <div class="images square">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\Buzzcut.jpg">
+            <p class="podpis">Buzzcut</p>
+        </div>
+
+        <div class="images square">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\pizza.png">
+            <p class="podpis">Świechu bez koszulki jedzący pizzę</p>
+        </div>
+
+        <div class="images square">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\parkwodny.png">
+            <p class="podpis">Świechu w parku wodnym</p>
+        </div>
+    </main>
+
+    <main class="gallery">
+        <div class="images square">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\swiechudrift.png">
+            <p class="podpis">Świechu driftuje</p>
+        </div>
+
+        <div class="images square">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\palenie.png">
+            <p class="podpis">Świechu pali</p>
+        </div>
+
+        <div class="images square">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\jablko.png">
+            <p class="podpis">Świechu is teasing his friend</p>
+        </div>
+
+        <div class="images square">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\swiechuadolf.png">
+            <p class="podpis">Świechu jako Hitler</p>
+        </div>
+
+        <div class="images square">
+            <img src="C:\Users\Kebob Nowak\Desktop\Zdjecia Patryka\swiechu_mad.png">
+            <p class="podpis">Świechu mad</p>
+        </div>
+    </main>
+
+
+    <script>
+        // Create the observer like the examples above
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('square-animation');
+                return;
+              }
+          
+              entry.target.classList.remove('square-animation');
+            });
+          });
+          
+          // Get multiple elements instead of a single one using "querySelectorAll"
+          const squares = document.querySelectorAll('.square');
+          
+          // Loop over the elements and add each one to the observer
+          squares.forEach((element) => observer.observe(element));
+            </script>
+</body>
+</html>

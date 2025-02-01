@@ -1,0 +1,202 @@
+@keyframes onEnter{
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes textOnEnter{
+    0%{
+        opacity: 0%;
+        font-size: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+        font-size: 150%;
+    }
+}
+
+@keyframes view{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+html{
+    font-family: 'Courier New';
+}
+
+header p{
+    text-align: center;
+    vertical-align:middle;
+    font-size: 150%;
+    width: 100%;
+    height: 50%;
+    text-decoration: none;
+}
+
+body{
+    padding-top: 80px;
+}
+
+header a{
+    width: 25%;
+    height: 100%;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover{
+    text-decoration: underline black;
+}
+
+header{
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    background-color: white;
+    z-index: 1000; /* Ensures it's above other elements */
+}
+header{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid black;
+}
+
+.images{
+    margin: 2%;
+    width: 18%;
+    height: 500px;
+}
+
+img{
+    height: 90%;
+    width: 100%;
+    animation: onEnter 1.2s normal linear;
+    animation-fill-mode: forwards;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+.podpis{
+    width: 100%;
+    vertical-align: bottom;
+    height: 10%;
+    text-align: center;
+    font-size: 150%;
+    animation: textOnEnter normal 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.kontakt{
+    height: 50px;
+    width: 100%;
+    font-size: 300%;
+    text-align: center;
+    animation: onEnter normal 1s linear;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.gallery{
+    align-items: center;
+}
+
+.kontaktmain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sigmamain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.SOTD{
+    width: 30%;
+    margin: 1.33%;
+    align-self: flex-start;
+    -webkit-box-shadow: 0px 0px 51px -7px rgba(0, 0, 0, 1);
+-moz-box-shadow: 0px 0px 51px -7px rgba(0, 0, 0, 1);
+box-shadow: 0px 0px 51px -7px rgba(0, 0, 0, 1)
+}
+
+.SOTDsec{
+    width: 80%;
+    height: 500px;
+    border: 3px solid black;
+    margin: 10px;
+    margin-left: 10%;
+    float:  left;
+    align-self: flex-start;
+}
+
+label{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 250%;
+    margin-top: 25px;
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.right{
+    text-align: center;
+    font-size: 200%;
+    margin-left: 10%;
+    animation: onEnter normal 1s linear;
+    margin-right: 10%;
+}
+
+.bold{
+    font-size: 350%;
+    animation: onEnter normal 1s linear;
+    font-weight: bolder;
+}
+
+.boldsmaller{
+    font-size: 300%;
+    animation: onEnter normal 1s linear;
+    font-weight: bold;
+}
+
+.square-animation{
+    animation: view normal 1s linear;
+}
+
+@keyframes viewMain{
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+.circle-animation{
+    animation: viewMain normal 0.05s linear;
+}
+
+.italic{
+    font-style: italic;
+}
+
