@@ -44,6 +44,8 @@ header p{
 
 body{
     padding-top: 80px;
+    container-name: body;
+    container-type: inline-size;
 }
 
 header a{
@@ -75,7 +77,7 @@ header{
 }
 
 
-@container header (max-width: 750px){
+@container header (max-width: 1300px){
     header p{
         font-size: 100%;
     }
@@ -87,11 +89,12 @@ header{
     }
 }
 
-@media (max-width: 750px){
-    @supports (font-size: 80%) {
-        .podpis {
-            font-size: 80%;
-        }
+@keyframes viewMain{
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
     }
 }
 
@@ -126,6 +129,8 @@ img{
     animation: textOnEnter normal 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: forwards;
 }
+
+
 
 .kontakt{
     height: 50px;
@@ -214,20 +219,38 @@ label{
     animation: view normal 1s linear;
 }
 
-@keyframes viewMain{
-    0%{
-        transform: scaleY(0);
-    }
-    100%{
-        transform: scaleY(1);
-    }
-}
 
-.circle-animation{
-    animation: viewMain normal 0.05s linear;
-}
 
 .italic{
     font-style: italic;
 }
 
+@media (max-width: 1200px){
+    .podpis {
+        font-size: 70% !important;
+    }
+    .SOTD{
+        height: 300px;
+    }
+    .SOTDsec{
+        height: 350px;
+    }
+    .right{
+        font-size: 150%;
+    }
+    .bold{
+        font-size: 250%;
+    }
+    .boldsmaller{
+        font-size: 200%;
+    }
+    .kontakt{
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 1200px){
+    .circle-animation{
+        animation: viewMain normal 0.05s linear !important;
+    }
+}
