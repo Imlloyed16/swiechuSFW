@@ -227,7 +227,7 @@ label{
 
 @media (max-width: 1200px){
     .podpis {
-        font-size: 70% !important;
+        font-size: 65% !important;
     }
     .SOTD{
         height: 300px;
@@ -246,6 +246,9 @@ label{
     }
     .kontakt{
         font-size: 100%;
+    }
+    .images{
+        height: 200px;
     }
 }
 
